@@ -1,0 +1,61 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+.chinese {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.english {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.margin30 {
+    margin-bottom: 30px;
+}
+
+.bg-1 {
+    background-color: #F7F7F9;
+    color: #7B7B7B;
+}
+
+.bg-2 {
+    background-color: #F7F7F9;
+    color: #7B7B7B;
+}
+
+.bg-3 {
+    background-color: #F7F7F9;
+    color: #7B7B7B;
+}
+
+.bg-4 {
+    background-color: #F7F7F9;
+    color: #7B7B7B;
+}
+
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.dropdown-menu {
+    background-color: #F7F7F9; /* Green */
+    color: #7B7B7B;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
