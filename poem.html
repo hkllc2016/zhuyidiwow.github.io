@@ -39,12 +39,23 @@
 
             //update page with a difference Chinese poem
             $("#ch").click(function () {
+
                 while (z1 == z) {
                     y = Math.random() * count;
                     z1 = Math.floor(y) + 1;
                 }
                 z = z1;
-                $("#poem").load("sources/poems/c" + z + ".html");
+                $.ajax({url: "sources/poems/c" + z + ".html",
+                    beforeSend: (function () {
+                        $("#poem").fadeOut(500);
+                    }),
+                    success: function(result){
+                    $("#poem").html(result);
+                }});
+
+                $("#poem").fadeIn(500);
+
+                //$("#poem").load("sources/poems/c" + z + ".html");
             });
 
             //update page with a difference English poem
