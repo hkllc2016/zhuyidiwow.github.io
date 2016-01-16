@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="valder" uuid="bca4ed3e-d6bc-43ce-8b7a-2f9d17167d80">
+      <secret-storage>master_key</secret-storage>
+      <user-name>13104363d</user-name>
+      <schema-pattern>13104363d.*</schema-pattern>
+      <default-schemas>test.*</default-schemas>
+    </data-source>
+  </component>
+</project>
