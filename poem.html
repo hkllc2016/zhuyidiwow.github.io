@@ -24,35 +24,29 @@
         var count = 0;
 
         $(document).ready(function () {
-
             $.get("sources/poems/c_count.text", function (data) {
                 count = data;
             });
 
-            var x = Math.random() * 4;
+            var x = Math.random() * count;
             var z = Math.floor(x) + 1;
             var y = Math.random() * count;
             var z1 = Math.floor(y) + 1;
-
+            alert(count);
             //initialize page with a Chinese poem
             $("#poem").load("sources/poems/c" + z + ".html");
 
             //update page with a difference Chinese poem
             $("#ch").click(function () {
+                $('#poem').fadeOut(500, function() {
+                    while (z1 == z) {
+                        y = Math.random() * count;
+                        z1 = Math.floor(y) + 1;
+                    }
+                    z = z1;
 
-                while (z1 == z) {
-                    y = Math.random() * count;
-                    z1 = Math.floor(y) + 1;
-                }
-                z = z1;
-                $.ajax({url: "sources/poems/c" + z + ".html",
-                    beforeSend: (function () {
-                        $("#poem").fadeOut(500);
-                    }),
-                    success: function(result){
-                    $("#poem").html(result);
-                }});
-
+                    $("#poem").load("sources/poems/c" + z + ".html");
+                });
                 $("#poem").fadeIn(500);
 
                 //$("#poem").load("sources/poems/c" + z + ".html");
@@ -60,12 +54,18 @@
 
             //update page with a difference English poem
             $("#en").click(function () {
-                while (z1 == z) {
-                    y = Math.random() * count;
-                    z1 = Math.floor(y) + 1;
-                }
-                z = z1;
-                $("#poem").load("sources/poems/e" + z + ".html");
+                $('#poem').fadeOut(500, function() {
+                    while (z1 == z) {
+                        y = Math.random() * count;
+                        z1 = Math.floor(y) + 1;
+                    }
+                    z = z1;
+
+                    $("#poem").load("sources/poems/e" + z + ".html");
+                });
+                $("#poem").fadeIn(500);
+
+                //$("#poem").load("sources/poems/c" + z + ".html");
             });
 
         });

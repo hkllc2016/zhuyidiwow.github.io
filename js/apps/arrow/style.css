@@ -1,0 +1,147 @@
+/* Color:
+blue: #23B5E0
+another blue: #003B60
+dark blue: #2D3A47
+green: #17E6D7
+red: #DA4343
+light red: #FF0F0F
+grey: #F6F6F6
+dark grey: #4A4A4A
+*/
+::selection {
+    background: #23B5E0;
+    color:white;
+}
+
+* { font-family: 'Open Sans', sans-serif;
+    background: #F6F6F6;
+}
+
+.blue { background: #003B60; }
+
+.darkBlue { background: #2D3A47; }
+
+.green { background: #17E6D7; }
+
+.red { background: #DA4343; }
+
+.lightRed { background: #FF0F0F; }
+
+.grey { background: #F6F6F6; }
+
+.darkGrey { background: #4A4A4A; }
+
+.white { background: white; }
+
+.roundBorder { border-radius: 0.2em; }
+
+#header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 4em;
+    top: 0;
+    left: 0; }
+
+#title {
+    position: absolute;
+    background: transparent;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    width: 10em;
+    line-height: 2em;
+    left: 50%;
+    margin-left: -5em;
+    margin-top: 0; }
+
+#leftNavi {
+    z-index: 0;
+    position: fixed;
+    width: 4em;
+    height: 200em;
+    top: 4em;
+    left: 0em; }
+
+#mainContent {
+    z-index: 1;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 100px;
+    left: 100px; }
+
+#rightNavi {
+    position: fixed;
+    width: 4em;
+    height: 200em;
+    top: 4em;
+    left: 100%;
+    margin-left: -4em;}
+
+#menu {
+    position: absolute;
+    background: white;
+    width: 4em;
+    height: 4em;
+    left: 0em;
+    top: 0em;
+    cursor: pointer; }
+
+p {
+    z-index: 1;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background: white;
+    font-size: 100%;
+}
+/* p 元素的absolute定位 会比实际下偏font-size*/
+/* fixed elements end */
+
+.rec {
+    z-index: 2;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    top: 0px;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.arrow {
+    background: #003B60;
+    height: 100px;
+    width: 40px;
+}
+
+.a1 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.a2 {
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.a3 {
+    position: absolute;
+    left: 75%;
+    top: 25%;
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.a4 {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    margin-left: -20px;
+    margin-top: -50px;
+}
