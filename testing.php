@@ -40,19 +40,19 @@ if (!$con)
                         $sql = "SELECT COUNT(id)  AS count FROM poem_en";
                         $query = mysql_query($sql);
                         $count = mysql_fetch_assoc($query);
-                        $count = $count['count'];
+                        $count1 = $count['count'];
 
-                        $displayed = floor(rand(0, $count)) + 1;
+                        $displayed = floor(rand(0, $count1)) + 1;
                         $sql = "SELECT * FROM poem_en WHERE id=$displayed";
                         $query = mysql_query($sql);
                         $poem = mysql_fetch_assoc($query);
 
                         $title = $poem['title'];
                         $author = $poem['author'];
-                        $content = 'asdasdas';
+                        $content = $poem['content'];
                     ?>
                     var title = '<?php echo $title; ?>';
-                    $(".title").text(title);
+                    $(".title").text(<?php echo $displayed; ?>);
                     $(".author").text('<?php echo $author; ?>');
                     $(".content").text('<?php echo $content; ?>');
 /*
