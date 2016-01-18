@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1527786750">
+  <component name="DataSourceManagerImpl" format="xml" hash="2084251580">
     <data-source source="LOCAL" name="valder" uuid="bca4ed3e-d6bc-43ce-8b7a-2f9d17167d80">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
