@@ -38,7 +38,7 @@
 
             //update page with a difference Chinese poem
             $("#ch").click(function () {
-                $('#poem').fadeOut(1000, function() {
+                $('#poem').fadeOut(500, function () {
                     while (z1 == z) {
                         y = Math.random() * count;
                         z1 = Math.floor(y) + 1;
@@ -46,7 +46,7 @@
                     z = z1;
 
                     $("#poem").load("sources/poems/c" + z + ".html");
-                }).delay(500).fadeIn(1000);
+                }).delay(500).fadeIn(500);
 
             });
 
@@ -91,7 +91,7 @@
 </nav>
 
 <!-- POEM -->
-<div>
+<div style="min-height: 1000px">
 <div id="poem">
 
 </div>
