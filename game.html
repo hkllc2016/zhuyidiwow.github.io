@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap Main CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -30,18 +30,33 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+            //alert for unfinished functions
             $('.unfinished').click(function() {
                 alert("This function has not been implemented yet.\nCome back and check later!")
             });
-            $('.year').mouseover(function() {
-                $('.year').css("background","#4A4A4A");//.css("color","whitesmoke");
-            }).mouseout(function() {
-                $('.year').css("background","whitesmoke");//.css("color","#4A4A4A");
-            });
+            //caret hover effect
             $('#caretParent').mouseover(function() {
                 $('#caret').css("border-top-color","black").css("border-bottom-color","black");
             }).mouseout(function() {
                 $('#caret').css("border-top-color", "white").css("border-bottom-color", "white");
+            });
+            //----------------------------------------------------------------------------------//
+            //year hover effect
+            $('.year').mouseover(function() {
+                $(this).css("background","#4A4A4A");
+            }).mouseout(function() {
+                $(this).css("background","rgba(74,73,74,0.39)");
+            }).click(function() {
+                $(this).parent().find('.games').slideToggle("slow");
+                $(this).toggleClass("selected");
+            });
+            //game hover effect
+            $('.game').mouseover(function() {
+                $(this).css("background","#D6D6D6");
+            }).mouseout(function() {
+                $(this).css("background","whitesmoke");
+            }).click(function() {
+                window.location = "articles/games/" + $(this).attr("id") +".html";
             });
         });
     </script>
@@ -82,16 +97,187 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="year">
-                2015
+                On My List
                 <span class="expand">+</span>
+            </div>
+            <div class="games">
+                <p class="game">
+                    <span class="gameName">Banished</span>
+                    <span class="gameGenre">SIM</span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Flower</span>
+                    <span class="gameGenre">JenovaChen</span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Flow</span>
+                    <span class="gameGenre">JenovaChen</span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Journey</span>
+                    <span class="gameGenre">JenovaChen</span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">The Last of Us</span>
+                    <span class="gameGenre">War</span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Portal2</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Valiant Hear: the World War</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">质量效应</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">勿忘我</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">看门狗</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <p class="game">
+                    <span class="gameName">Close Castles</span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                <!--
+                <p class="game">
+                    <span class="gameName"></span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                -->
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-md-offset-3"></div>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="year">
+                2015
+                <span class="expand">+</span>
+            </div>
+            <div class="games">
+                <p class="game" id="Tengami">
+                    <span class="gameName">Tengami</span>
+                    <span class="gameGenre">Papercut</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="MonumentValley">
+                    <span class="gameName">Monument Valley</span>
+                    <span class="gameGenre">Wondering</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="AssassinsCreed2">
+                    <span class="gameName">Assasin’s Creed II</span>
+                    <span class="gameGenre">Exploration</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="ThisWarOfMine">
+                    <span class="gameName">This War of Mine</span>
+                    <span class="gameGenre">War</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="DearEsther">
+                    <span class="gameName">Dear Esther</span>
+                    <span class="gameGenre">Walk</span>
+                    <span class="gameRate">****</span>
+                </p>
+                <p class="game" id="Minecraft">
+                    <span class="gameName">Minecraft</span>
+                    <span class="gameGenre">Sandbox</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="DontStarve">
+                    <span class="gameName">Don't Starve</span>
+                    <span class="gameGenre">Survival</span>
+                    <span class="gameRate">***</span>
+                </p>
+                <p class="game" id="ANNO1440">
+                    <span class="gameName">ANNO1440</span>
+                    <span class="gameGenre">SIM</span>
+                    <span class="gameRate">****</span>
+                </p>
+                <p class="game" id="LunarFlowers">
+                    <span class="gameName">*Lunar Flowers</span>
+                    <span class="gameGenre">Puzzle</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="ATaleOfTwoSons">
+                    <span class="gameName">*A Tale of Two Sons</span>
+                    <span class="gameGenre">Adventure</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="ThePathToLuma">
+                    <span class="gameName">The Path to Luma</span>
+                    <span class="gameGenre">Puzzle</span>
+                    <span class="gameRate">***</span>
+                </p>
+                <p class="game" id="Prune">
+                    <span class="gameName">Prune</span>
+                    <span class="gameGenre">Cultivation</span>
+                    <span class="gameRate">****</span>
+                </p>
+                <p class="game" id="SometimesYouDie">
+                    <span class="gameName">Sometimes You Die</span>
+                    <span class="gameGenre">New Genre</span>
+                    <span class="gameRate">****</span>
+                </p>
+                <p class="game" id="Deemo">
+                    <span class="gameName">Deemo</span>
+                    <span class="gameGenre">Music</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <p class="game" id="LeosFortune">
+                    <span class="gameName">Leo's Fortune</span>
+                    <span class="gameGenre">Platformer</span>
+                    <span class="gameRate">*****</span>
+                </p>
+                <!--
+                <p class="game" id="">
+                    <span class="gameName"></span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                -->
+            </div>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-md-offset-3"></div>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="year">
+                2014
+                <span class="expand">+</span>
+            </div>
+            <div class="games">
+                <p class="game" id="">
+                    <span class="gameName">Tengami</span>
+                    <span class="gameGenre">Puzzle</span>
+                    <span class="gameRate">31 January</span></p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+                <p class="game">Tengami</p>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -14,11 +14,10 @@ body {
     height: 1000px;
 }
 
-.bg-3 {
+footer {
     background-color: #18BC9C;
     color: #F7F7F9;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
 
@@ -75,12 +74,14 @@ body {
 
 .year {
     padding-left: 5%;
-    background: whitesmoke;
+    background: rgba(74,73,74,0.39);
     width: 100%;
-    color: #18BC9C;
+    color: white;
     line-height: 40px;
     border-radius: 5px;
-    transition: background 0.5s;
+    transition: background 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .year:hover{
@@ -90,4 +91,50 @@ body {
     position: absolute;
     right: 5%;
     font-size: 120%;
+}
+
+.games {
+    display: none;
+}
+
+.game {
+    min-height: 35px;
+    font-size: 80%;
+    width: 96%;
+    position: relative;
+    left: 2%;
+    color: black;
+    padding-left: 10%;
+    background: whitesmoke;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.gameRate, .gameName, .gameGenre {
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+}
+
+.gameName {
+    left: 0;
+    width: 50%;
+    font-family: 'Merriweather', serif;
+}
+.gameGenre {
+    left: 50%;
+    width: 25%;
+    font-family: 'Merriweather', serif;
+}
+
+.gameRate{
+    left: 75%;
+    width: 25%;
+    font-family: 'Merriweather', serif;
+}
+
+.selected {
+    background: #4A4A4A !important;
 }
