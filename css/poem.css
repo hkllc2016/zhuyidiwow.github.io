@@ -10,7 +10,19 @@ body {
 }
 
 .english {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-size: 80%;
+    line-height: 2;
+}
+
+.englishH3 {
+    font-family: 'Merriweather', serif;
+    font-size: 150%;
+}
+
+.englishH4 {
+    font-family: 'Merriweather', serif;
+    font-size: 120%;
 }
 
 .margin30 {
