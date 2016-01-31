@@ -1,0 +1,93 @@
+body {
+    font: 20px 'Open Sans', sans-serif;
+    line-height: 1.8;
+    color: white;
+}
+
+.margin30 {
+    margin-bottom: 30px;
+}
+
+.bg-1 {
+    background-color: #18BC9C;
+    color: white;
+    height: 1000px;
+}
+
+.bg-3 {
+    background-color: #18BC9C;
+    color: #F7F7F9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: #18BC9C;
+}
+
+.dropdown-toggle {
+    background-color: #18BC9C;
+}
+
+#caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.dropdown-menu {
+    background-color: #F7F7F9; /* Green */
+    color: #18BC9C;
+}
+
+.dropdown-menu > li > a {
+    background-color: white; /* Green */
+    color: #18BC9C;
+}
+
+.navbar-nav > .open > a:focus {
+    background-color: #50E3C2 !important;
+}
+.navbar-nav li a:hover {
+    color: black !important;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+}
+
+.navbar-toggle{
+    background: #18BC9C;
+    color: white;
+}
+
+.year {
+    padding-left: 5%;
+    background: whitesmoke;
+    width: 100%;
+    color: #18BC9C;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.year:hover{
+    cursor: pointer;
+}
+.expand {
+    position: absolute;
+    right: 5%;
+    font-size: 120%;
+}
