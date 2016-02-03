@@ -1,12 +1,13 @@
 body {
-    font: 20px Montserrat, sans-serif;
+    font: 20px 'Open Sans', sans-serif;
     line-height: 1.8;
     color: white;
 }
 
-.chinese {
-    font-family: 'Montserrat', sans-serif;
+h4, h5, h6 {
+    font-family: 'Merriweather', serif;
 }
+
 
 .english {
     font-family: 'Open Sans', sans-serif;
