@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Valder's Palace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Main CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/game.css" rel="stylesheet">
+
+    <!-- Include JQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap main javascript -->
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        h4 {
+            font-size: 100%;
+            font-family: 'Merriweather', serif;
+            line-height: 30px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //alert for unfinished functions
+            $('.unfinished').click(function() {
+                alert("This function has not been implemented yet.\nCome back and check later!")
+            });
+            //caret hover effect
+            $('#caretParent').mouseover(function() {
+                $('#caret').css("border-top-color","black").css("border-bottom-color","black");
+            }).mouseout(function() {
+                $('#caret').css("border-top-color", "white").css("border-bottom-color", "white");
+            });
+            //----------------------------------------------------------------------------------//
+            //year hover effect
+            $('.year').mouseover(function() {
+                $(this).css("background","#4A4A4A");
+            }).mouseout(function() {
+                $(this).css("background","rgba(74,73,74,0.39)");
+            }).click(function() {
+                $(this).parent().find('.games').slideToggle("slow");
+                $(this).toggleClass("selected");
+            });
+            //game hover effect
+            $('.game').mouseover(function() {
+                $(this).css("background","#D6D6D6");
+            }).mouseout(function() {
+                $(this).css("background","whitesmoke");
+            }).click(function() {
+                window.location = "games/" + $(this).attr("id");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: white">Yidi, ZHU</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav  navbar-nav navbar-right">
+                <li><a class="unfinished" href="#" style="color: white">PORTFOLIO</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false" id="caretParent">APPS<span class="caret" id="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="poem.html">POEM</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="unfinished" href="#" style="color: white">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="year">
+                Unoriginal Games
+                <span class="expand">+</span>
+            </div>
+            <div class="games">
+                <p class="game" id="spaceShooter">
+                    <span class="gameName">Space Shooter</span>
+                    <span class="gameGenre">Unity</span>
+                    <span class="gameRate">02/2016</span>
+                </p>
+
+                <p class="game" id="tennis">
+                    <span class="gameName">Tennis</span>
+                    <span class="gameGenre">HTML5</span>
+                    <span class="gameRate">02/2016</span>
+                </p>
+                <!--
+                <p class="game">
+                    <span class="gameName"></span>
+                    <span class="gameGenre"></span>
+                    <span class="gameRate"></span>
+                </p>
+                -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-3 text-center">
+    <p>@Yidi, ZHU 2016</p>
+</footer>
+
+</body>
+</html>
