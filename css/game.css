@@ -4,14 +4,10 @@ body {
     color: white;
 }
 
-.margin30 {
-    margin-bottom: 30px;
-}
-
 .bg-1 {
     background-color: #18BC9C;
     color: white;
-    height: 1000px;
+    min-height:1000px;
 }
 
 footer {
@@ -22,13 +18,13 @@ footer {
 }
 
 .container-fluid {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
