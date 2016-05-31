@@ -1,16 +1,16 @@
 body {
-    font: 20px 'Open Sans', sans-serif;
+    font: 24px 'Merriweather', sans-serif;
     line-height: 1.8;
     color: white;
 }
 
-h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif;
 }
 
 
 .english {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', sans-serif;
 }
 
 .margin30 {
@@ -18,18 +18,18 @@ h4, h5, h6 {
 }
 
 .bg-1 {
-    background-color: #18BC9C;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .bg-2 {
-    background-color: #F7F7F9;
-    color: #7B7B7B;
+    background-color: white;
+    color: black;
 }
 
 .bg-3 {
-    background-color: #7B7B7B;
-    color: #F7F7F9;
+    background-color: white;
+    color: black;
 }
 
 
@@ -47,7 +47,7 @@ h4, h5, h6 {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 2px;
-    background: #2C3E50;
+    background: black;
 }
 
 .dropdown-menu {
