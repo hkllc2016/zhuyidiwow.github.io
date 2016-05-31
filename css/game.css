@@ -5,14 +5,14 @@ body {
 }
 
 .bg-1 {
-    background-color: #18BC9C;
-    color: white;
-    min-height:1000px;
+    background-color: white;
+    color: black;
+    min-height: 1000px;
 }
 
 footer {
-    background-color: #18BC9C;
-    color: #F7F7F9;
+    background-color: white;
+    color: black;
     position: relative;
     width: 100%;
 }
@@ -30,11 +30,12 @@ footer {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 2px;
-    background: #18BC9C;
+    background: white;
+    color: black;
 }
 
 .dropdown-toggle {
-    background-color: #18BC9C;
+    background-color: white;
 }
 
 #caret {
@@ -60,12 +61,12 @@ footer {
 }
 
 .navbar-nav > li > a {
-    color: white !important;
+    color: black !important;
 }
 
 .navbar-toggle{
     background: #18BC9C;
-    color: white;
+    color: black;
 }
 
 .year {
@@ -133,4 +134,8 @@ footer {
 
 .selected {
     background: #4A4A4A !important;
+}
+
+.navbar-brand {
+    color: black !important;
 }
