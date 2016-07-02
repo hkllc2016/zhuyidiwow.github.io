@@ -21,19 +21,14 @@ h3, h4, h5, h6 {
 .bg-1 {
     background-color: white;
     color: black;
+    z-index: 1;
 }
 
 .bg-2 {
     background-color: white;
     color: black;
+    z-index: 1;
 }
-
-.bg-3 {
-    background-color: white;
-    color: black;
-}
-
-
 
 .container-fluid {
     padding-top: 50px;
@@ -49,11 +44,13 @@ h3, h4, h5, h6 {
     font-size: 12px;
     letter-spacing: 2px;
     background: black;
+    z-index: 2;
 }
 
 .dropdown-menu {
     background-color: #F7F7F9; /* Green */
     color: #7B7B7B;
+    z-index: 1;
 }
 
 .navbar-nav li a:hover {
@@ -62,4 +59,26 @@ h3, h4, h5, h6 {
 
 .navbar-nav li > a {
     color: white;
+}
+
+#bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#welcomeTxt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#txt{
+    top: 50%;
 }
